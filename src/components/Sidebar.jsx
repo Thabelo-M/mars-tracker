@@ -2,7 +2,7 @@
 import React from "react";
 import "../styles/Sidebar.css";
 
-function Sidebar({ taskCount }) {
+function Sidebar({ taskCount, onDeleteAll }) {
   const currentUser = "Mission Commander";
 
   return (
@@ -19,7 +19,7 @@ function Sidebar({ taskCount }) {
         <p>{taskCount}</p>
       </div>
 
-      <button className="delete-all-btn" disabled>
+      <button className="delete-all-btn" onClick={onDeleteAll} disabled={taskCount === 0}>
         Delete All Tasks
       </button>
     </aside>

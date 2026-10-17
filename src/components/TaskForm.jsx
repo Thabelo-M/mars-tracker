@@ -2,21 +2,35 @@
 import React, { useState } from "react";
 import "../styles/TaskForm.css";
 
-function TaskForm() {
+function TaskForm({ onAddTask}) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [creator, setCreator] = useState("");
   const [assignee, setAssignee] = useState("");
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    console.log("Task submitted:", {
-      title,
-      description,
-      creator,
-      assignee,
-    });
+  
+function handleSubmit(event) {
+  event.preventDefault();
+
+  const newTask = {
+    title: title.trim(),
+    description: description.trim(),
+    creator: creator.trim(),
+    assignee: assignee.trim(),
+  };
+
+  if (Object.values(newTask).some((value) => !value)) {
+    return;
   }
+
+  onAddTask(newTask);
+
+  setTitle("");
+  setDescription("");
+  setCreator("");
+  setAssignee("");
+}
+
 
   return (
     <section className="task-form-section">
