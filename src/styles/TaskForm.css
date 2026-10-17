@@ -1,0 +1,54 @@
+
+.task-form-section {
+  margin-top: 30px;
+  padding: 25px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.task-form-section h2 {
+  margin-top: 0;
+  color: #a63a28;
+}
+
+.task-form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-form-section label {
+  font-weight: bold;
+  color: #252b38;
+}
+
+.task-form-section input,
+.task-form-section textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.task-form-section textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.task-form-section button {
+  padding: 12px 20px;
+  background-color: #a63a28;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.task-form-section button:hover {
+  background-color: #842c1f;
+}

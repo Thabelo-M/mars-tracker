@@ -2,9 +2,8 @@
 import React from "react";
 import "../styles/Sidebar.css";
 
-function Sidebar() {
+function Sidebar({ taskCount }) {
   const currentUser = "Mission Commander";
-  const taskCount = 0;
 
   return (
     <aside className="sidebar">
