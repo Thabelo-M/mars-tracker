@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import "./styles/App.css";
+import MarsImage from "./components/MarsImage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Sidebar />
 
         <main>
+          <MarsImage />
           <h2>Mars Mission Dashboard</h2>
           <p>Manage and track your mission tasks here.</p>
         </main>

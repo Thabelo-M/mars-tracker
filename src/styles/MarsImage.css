@@ -1,0 +1,18 @@
+
+.mars-image-section {
+  margin-bottom: 30px;
+}
+
+.mars-image-section h2 {
+  color: #a63a28;
+  margin-top: 0;
+}
+
+.mars-image {
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+  background-color: #000;
+  border-radius: 10px;
+  display: block;
+}
