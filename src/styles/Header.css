@@ -1,0 +1,30 @@
+
+.mission-header {
+  background-color: #a63a28;
+  color: white;
+  padding: 20px 30px;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.mission-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.mission-header p {
+  margin: 8px 0 0;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .mission-header {
+    padding: 15px;
+  }
+
+  .mission-header h1 {
+    font-size: 21px;
+  }
+}
