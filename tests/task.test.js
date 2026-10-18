@@ -8,15 +8,15 @@ describe("Mars Mission Task Tracker", () => {
     const taskData = {
       title: "Inspect Mars Rover",
       description: "Inspect the Mars rover and check all its systems.",
-      creator: "John Smith",
-      assignee: "Sarah Jones",
+      creator: "Bridget Mahlangu",
+      assignee: "Asanda Zulu",
     };
 
     const updatedTasks = createTask(tasks, taskData);
 
     expect(updatedTasks.length).toBe(1);
     expect(updatedTasks[0].title).toBe("Inspect Mars Rover");
-    expect(updatedTasks[0].creator).toBe("John Smith");
+    expect(updatedTasks[0].creator).toBe("Bridget Mahlangu");
     expect(updatedTasks[0].id).toBeDefined();
   });
 });

@@ -11,13 +11,13 @@ async function testdeleteTask() {
       .sendKeys("Delete tasks");
 
     await driver.findElement(By.id("task-description"))
-      .sendKeys("nhgtyxsdrcgfvtybhnjmk,fr");
+      .sendKeys("This test case is to test if the delete button works");
 
     await driver.findElement(By.id("task-creator"))
-      .sendKeys("gvytgv");
+      .sendKeys("Thabelo");
 
     await driver.findElement(By.id("task-assignee"))
-      .sendKeys("cvftxdfcvgh");
+      .sendKeys("Bridget");
 
     await driver.findElement(By.css('button[type="submit"]'))
       .click();
@@ -30,7 +30,9 @@ async function testdeleteTask() {
     );
 
     await taskCard.findElement(By.css(".delete-task-btn")).click();
-
+    const alert = await driver.wait(until.alertIsPresent(), 5000);
+        await alert.accept();
+        
     await driver.wait(
       until.stalenessOf(taskCard),
       5000
