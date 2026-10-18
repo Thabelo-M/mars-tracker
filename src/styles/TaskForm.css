@@ -52,3 +52,22 @@
 .task-form-section button:hover {
   background-color: #842c1f;
 }
+
+
+.field-error {
+  color: #dc2626;
+  font-size: 0.85rem;
+  margin: 4px 0 12px;
+}
+
+.form-success {
+  color: #15803d;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.task-form-section input[aria-invalid="true"],
+.task-form-section textarea[aria-invalid="true"] {
+  border: 1px solid #dc2626;
+}
