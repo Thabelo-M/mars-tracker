@@ -33,7 +33,10 @@ jobs:
 
       - name: Build application
         run: npm run build
-
+        
+      - name: Copy index.html to build folder
+        run: cp public/index.html dist/index.html
+        
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
